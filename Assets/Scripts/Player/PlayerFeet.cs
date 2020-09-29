@@ -12,18 +12,18 @@ public class PlayerFeet : MonoBehaviour
     private PlayerMovement playerMovement;
     #endregion
 
-    private void OnColliderEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.tag.Equals("Environment"))
+        if (other.gameObject.tag.Equals("Environment"))
         {
             playerMovement.IsGrounded = true;
             playerMovement.ResetAirJumps();
         }
     }
 
-    private void OnColliderExit2D(Collider2D other)
+    private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.tag.Equals("Environment"))
+        if (other.gameObject.tag.Equals("Environment"))
         {
             StartCoroutine(SetNotGrounded());
         }
@@ -34,7 +34,5 @@ public class PlayerFeet : MonoBehaviour
         // Lets the player make jumps they slightly shouldn't
         yield return new WaitForSeconds(forgiveTime);
         playerMovement.IsGrounded = false;
-        // playerMovement.SetNumJumpsToZero();
-        
     }
 }
