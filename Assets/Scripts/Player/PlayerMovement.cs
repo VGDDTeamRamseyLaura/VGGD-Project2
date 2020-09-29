@@ -48,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
     {
         movementX = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && airJumps >= 1) {
+        if (Input.GetButtonDown("Jump") && (isGrounded || airJumps >= 1))
+        {
             Jump();
         }
     }
@@ -84,7 +85,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        airJumps--;
+        if (!isGrounded)
+        {
+            airJumps--;
+        }
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(new Vector2(0, jumpForce));
     }
