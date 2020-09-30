@@ -90,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
             airJumps--;
         }
         rb.velocity = new Vector2(rb.velocity.x, 0);
+        Debug.Log(isGrounded);
         rb.AddForce(new Vector2(0, jumpForce));
     }
 
