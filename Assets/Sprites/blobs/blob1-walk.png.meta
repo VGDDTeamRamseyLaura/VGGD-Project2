@@ -1,49 +1,31 @@
 fileFormatVersion: 2
-guid: 1e5a3a07af85447a2bf57e7166d86cce
+guid: e17475763f10d4d90af6e67b8a6a756f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8537185504155043265
-    second: blob1 jump_0
+      213: 7195918546769815668
+    second: blob1-walk_0
   - first:
-      213: 8361693428084020992
-    second: blob1 jump_1
+      213: -4315792288663359755
+    second: blob1-walk_1
   - first:
-      213: -131974333258433667
-    second: blob1 jump_2
+      213: 7872557357158215383
+    second: blob1-walk_2
   - first:
-      213: -1440489599276597829
-    second: blob1 jump_3
+      213: 4784182380866120352
+    second: blob1-walk_3
   - first:
-      213: 6465909789863539410
-    second: blob1 jump_4
+      213: 7643488505511530830
+    second: blob1-walk_4
   - first:
-      213: -939363982030250344
-    second: blob1 jump_5
+      213: 9007575334225186877
+    second: blob1-walk_5
   - first:
-      213: 2546992016385519154
-    second: blob1 jump_6
+      213: 6449418412313715108
+    second: blob1-walk_6
   - first:
-      213: 8749377842580360756
-    second: blob1 jump_7
-  - first:
-      213: -2537390414036927205
-    second: blob1 jump_8
-  - first:
-      213: -3759361283358331023
-    second: blob1 jump_9
-  - first:
-      213: 7947208367759371695
-    second: blob1 jump_10
-  - first:
-      213: -2701109332720008727
-    second: blob1 jump_11
-  - first:
-      213: -5259055949739233294
-    second: blob1 jump_12
-  - first:
-      213: -6699104512717007365
-    second: blob1 jump_13
+      213: -3723171021280061205
+    second: blob1-walk_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -176,91 +158,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blob1 jump_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3a79331403d58980800000000000000
-      internalID: -8537185504155043265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blob1 jump_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0079aa5eed3ba0470800000000000000
-      internalID: 8361693428084020992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blob1 jump_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7b79aa0b022b2ef0800000000000000
-      internalID: -131974333258433667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blob1 jump_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbd397c675a520ce0800000000000000
-      internalID: -1440489599276597829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blob1 jump_4
+      name: blob1-walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -274,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2798e22b68bb950800000000000000
-      internalID: 6465909789863539410
+      spriteID: 4782cdceac90dd360800000000000000
+      internalID: 7195918546769815668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blob1 jump_5
+      name: blob1-walk_1
       rect:
         serializedVersion: 2
         x: 32
@@ -295,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89e5a407f65b6f2f0800000000000000
-      internalID: -939363982030250344
+      spriteID: 5fea9dd87c93b14c0800000000000000
+      internalID: -4315792288663359755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blob1 jump_6
+      name: blob1-walk_2
       rect:
         serializedVersion: 2
         x: 64
@@ -316,35 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23e2a6e8ebbb85320800000000000000
-      internalID: 2546992016385519154
+      spriteID: 7dead4ba431f04d60800000000000000
+      internalID: 7872557357158215383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blob1 jump_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43e0da8aac80c6970800000000000000
-      internalID: 8749377842580360756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blob1 jump_8
+      name: blob1-walk_3
       rect:
         serializedVersion: 2
         x: 0
@@ -358,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1df8d2bcd069ccd0800000000000000
-      internalID: -2537390414036927205
+      spriteID: 0aa25381784d46240800000000000000
+      internalID: 4784182380866120352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blob1 jump_9
+      name: blob1-walk_4
       rect:
         serializedVersion: 2
         x: 32
@@ -379,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17fe11ba4d014dbc0800000000000000
-      internalID: -3759361283358331023
+      spriteID: e41dbcf7c40231a60800000000000000
+      internalID: 7643488505511530830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blob1 jump_10
+      name: blob1-walk_5
       rect:
         serializedVersion: 2
         x: 64
@@ -400,35 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad2f4487e72a4e60800000000000000
-      internalID: 7947208367759371695
+      spriteID: d301014da06510d70800000000000000
+      internalID: 9007575334225186877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blob1 jump_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e14bbb7f5bb38ad0800000000000000
-      internalID: -2701109332720008727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blob1 jump_12
+      name: blob1-walk_6
       rect:
         serializedVersion: 2
         x: 0
@@ -442,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff63e53a741407b0800000000000000
-      internalID: -5259055949739233294
+      spriteID: 4a1a2d120efe08950800000000000000
+      internalID: 6449418412313715108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blob1 jump_13
+      name: blob1-walk_7
       rect:
         serializedVersion: 2
         x: 32
@@ -463,8 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf5594660fff703a0800000000000000
-      internalID: -6699104512717007365
+      spriteID: be8d29eaea3a45cc0800000000000000
+      internalID: -3723171021280061205
       vertices: []
       indices: 
       edges: []
