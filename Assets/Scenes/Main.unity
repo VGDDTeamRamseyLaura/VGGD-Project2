@@ -330,31 +330,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!1 &748278991 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6360422964233513668, guid: 6274800b6786f46649bbf16bce0d5670,
-    type: 3}
-  m_PrefabInstance: {fileID: 6360422963624849912}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &748278996
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748278991}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 279198441e31b495dbde18aee14b219c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &842956258
 GameObject:
   m_ObjectHideFlags: 0

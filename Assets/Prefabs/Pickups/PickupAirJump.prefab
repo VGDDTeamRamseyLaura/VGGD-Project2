@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6360422964233513669}
   - component: {fileID: 6360422964233513656}
   - component: {fileID: 6360422964233513671}
+  - component: {fileID: 748278996}
   m_Layer: 0
   m_Name: PickupAirJump
   m_TagString: Pickup
@@ -123,3 +124,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28125, y: 0.5}
   m_EdgeRadius: 0
+--- !u!95 &748278996
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360422964233513668}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 279198441e31b495dbde18aee14b219c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
