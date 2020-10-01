@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private int maxAirJumps;
+
+    [SerializeField]
+    private int startingAirJumps;
     #endregion
 
     #region Cached Components
@@ -78,7 +81,6 @@ public class PlayerMovement : MonoBehaviour
 
         if ((movementX > 0 && !FacingRight) || (movementX < 0 && FacingRight))
         {
-            // ... flip the player.
             Flip();
         }
     }
@@ -106,7 +108,12 @@ public class PlayerMovement : MonoBehaviour
     #region Public functions
     public void ResetAirJumps()
     {
-        airJumps = maxAirJumps;
+        airJumps = startingAirJumps;
+    }
+
+    public void IncreaseNumAirJumps(int num)
+    {
+        airJumps = Mathf.Min(airJumps + num, maxAirJumps);
     }
     #endregion
 
