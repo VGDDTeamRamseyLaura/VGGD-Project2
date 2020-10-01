@@ -330,6 +330,31 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &748278991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6360422964233513668, guid: 6274800b6786f46649bbf16bce0d5670,
+    type: 3}
+  m_PrefabInstance: {fileID: 6360422963624849912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &748278996
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748278991}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 279198441e31b495dbde18aee14b219c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &842956258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1808635127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf43b0fd3f3c44fb844614c35b218be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  music: []
+  timeToPhase: 0
 --- !u!4 &1808635128
 Transform:
   m_ObjectHideFlags: 0
@@ -1316,16 +1343,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PickupAirJump
-      objectReference: {fileID: 0}
-    - target: {fileID: 6360422964233513669, guid: 6274800b6786f46649bbf16bce0d5670,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1767095207
-      objectReference: {fileID: 0}
-    - target: {fileID: 6360422964233513669, guid: 6274800b6786f46649bbf16bce0d5670,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6360422964233513670, guid: 6274800b6786f46649bbf16bce0d5670,
         type: 3}
