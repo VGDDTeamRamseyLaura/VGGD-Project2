@@ -1,5 +1,5 @@
 # VGGDProject2
 
 Credit for sound and music:
-https://opengameart.org/content/crystal-cave-song18
+https://www.fesliyanstudios.com/royalty-free-music/downloads-c/8-bit-music/6
 https://opengameart.org/content/8-bit-sound-effects-library
