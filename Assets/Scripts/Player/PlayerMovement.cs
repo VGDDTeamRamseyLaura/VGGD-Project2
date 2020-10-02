@@ -72,10 +72,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (IsLocked)
-        {
-            return;
-        }
         Move();
     }
 
@@ -84,8 +80,13 @@ public class PlayerMovement : MonoBehaviour
     #region Movement Functions
     private void Move()
     {
-        if (movementX * rb.velocity.x <= 0) {
+        if (movementX * rb.velocity.x <= 0 || isLocked) {
             rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+
+        if (IsLocked)
+        {
+            return;
         }
 
         rb.AddForce(new Vector2(moveForce * movementX, 0));

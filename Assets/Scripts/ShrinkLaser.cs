@@ -10,6 +10,9 @@ public class ShrinkLaser : MonoBehaviour
 
     [SerializeField]
     private float shrinkFactor;
+
+    [SerializeField]
+    private AudioSource shrinkSound;
     #endregion
 
     #region Private Variables
@@ -21,12 +24,14 @@ public class ShrinkLaser : MonoBehaviour
         if (other.tag.Equals("Player") && !alreadyShrunk)
         {
             alreadyShrunk = true;
+            shrinkSound.Play();
             StartCoroutine(ShrinkObject(other.gameObject));
         }
     }
 
     private IEnumerator ShrinkObject(GameObject objectToShrink)
     {
+        objectToShrink.GetComponent<PlayerMovement>().IsLocked = true;
         int shrinkInstances = 50;
         Vector2 amountToShrinkPerInstance = shrinkFactor / shrinkInstances * objectToShrink.transform.localScale;
         for (int i = 0; i < shrinkInstances; i++) 
@@ -39,6 +44,7 @@ public class ShrinkLaser : MonoBehaviour
             }
             yield return new WaitForSeconds(timeToShrink / shrinkInstances);
         }
+        objectToShrink.GetComponent<PlayerMovement>().IsLocked = false;
         
     }
 }
