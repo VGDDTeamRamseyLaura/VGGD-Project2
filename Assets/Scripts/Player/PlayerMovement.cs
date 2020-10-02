@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && (isGrounded || airJumps >= 1))
         {
+            Debug.Log("Test");
             Jump();
         }
     }
@@ -138,6 +139,11 @@ public class PlayerMovement : MonoBehaviour
     public void IncreaseNumAirJumps(int num)
     {
         airJumps = Mathf.Min(airJumps + num, maxAirJumps);
+    }
+
+    public Vector2 getVelocity()
+    {
+        return rb.velocity;
     }
     #endregion
 }

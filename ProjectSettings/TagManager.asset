@@ -47,11 +47,11 @@ TagManager:
   - name: Background
     uniqueID: 2315522409
     locked: 0
-  - name: Environment
-    uniqueID: 1010732233
-    locked: 0
   - name: Shrinkray
     uniqueID: 2728580239
+    locked: 0
+  - name: Environment
+    uniqueID: 1010732233
     locked: 0
   - name: Player
     uniqueID: 1650916189

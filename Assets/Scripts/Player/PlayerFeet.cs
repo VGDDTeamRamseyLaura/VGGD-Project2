@@ -27,7 +27,20 @@ public class PlayerFeet : MonoBehaviour
             playerMisc.Die();
         }
     }
-    
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.tag.Equals("Environment") && Mathf.Abs(playerMovement.getVelocity().y) < 0.01f)
+        {
+            playerMovement.IsGrounded = true;
+            playerMovement.ResetAirJumps();
+        }
+        else if (other.gameObject.tag.Equals("Spikes"))
+        {
+            playerMisc.Die();
+        }
+    }
+
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.tag.Equals("Environment"))
