@@ -21,7 +21,7 @@ public class ShrinkLaser : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag.Equals("Player") && !alreadyShrunk)
+        if (other.tag.Equals("Player") && other.name.Equals("Player") && !alreadyShrunk)
         {
             alreadyShrunk = true;
             shrinkSound.Play();
