@@ -10,6 +10,9 @@ public class PlayerFeet : MonoBehaviour
     
     [SerializeField]
     private PlayerMovement playerMovement;
+
+    [SerializeField]
+    private PlayerMisc playerMisc;
     #endregion
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -19,8 +22,12 @@ public class PlayerFeet : MonoBehaviour
             playerMovement.IsGrounded = true;
             playerMovement.ResetAirJumps();
         }
+        else if (other.gameObject.tag.Equals("Spikes"))
+        {
+            playerMisc.Die();
+        }
     }
-
+    
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.tag.Equals("Environment"))

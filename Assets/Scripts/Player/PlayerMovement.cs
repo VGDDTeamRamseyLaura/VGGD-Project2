@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     #region Cached Components
     private Rigidbody2D rb;
+    
+    private Animator animator;
     #endregion
 
 
@@ -34,14 +36,18 @@ public class PlayerMovement : MonoBehaviour
 
     private bool facingRight = true;
 
+    private bool isLocked = false;
+
     public bool IsGrounded { get => isGrounded; set => isGrounded = value; }
     public bool FacingRight { get => facingRight; set => facingRight = value; }
+    public bool IsLocked { get => isLocked; set => isLocked = value; }
     #endregion
 
     #region On Start Functions
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         ResetAirJumps();
     }
     #endregion
@@ -49,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
     #region Update Functions
     private void Update()
     {
+        if (IsLocked)
+        {
+            return;
+        }
         movementX = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && (isGrounded || airJumps >= 1))
@@ -59,6 +69,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (IsLocked)
+        {
+            return;
+        }
         Move();
     }
 
@@ -79,6 +93,15 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(-maxMoveSpeed, rb.velocity.y);
         }
 
+        if (Mathf.Abs(movementX) > 0.01f && isGrounded)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+        }
+
         if ((movementX > 0 && !FacingRight) || (movementX < 0 && FacingRight))
         {
             Flip();
@@ -91,6 +114,7 @@ public class PlayerMovement : MonoBehaviour
         {
             airJumps--;
         }
+        animator.SetTrigger("Jump");
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(new Vector2(0, jumpForce));
     }
@@ -116,7 +140,4 @@ public class PlayerMovement : MonoBehaviour
         airJumps = Mathf.Min(airJumps + num, maxAirJumps);
     }
     #endregion
-
-
-
 }
