@@ -63,7 +63,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && (isGrounded || airJumps >= 1))
         {
-            Debug.Log("Test");
             Jump();
         }
     }

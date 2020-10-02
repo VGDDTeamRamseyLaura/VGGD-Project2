@@ -12,17 +12,33 @@ public class ShrinkLaser : MonoBehaviour
     private float shrinkFactor;
     #endregion
 
+    #region Private Variables
+    private bool alreadyShrunk = false;
+    #endregion
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag.Equals("Player"))
+        if (other.tag.Equals("Player") && !alreadyShrunk)
         {
+            alreadyShrunk = true;
             StartCoroutine(ShrinkObject(other.gameObject));
         }
     }
 
     private IEnumerator ShrinkObject(GameObject objectToShrink)
     {
-        objectToShrink.transform.localScale = new Vector2(0.5f, 0.5f);
-        yield return null;
+        int shrinkInstances = 50;
+        Vector2 amountToShrinkPerInstance = shrinkFactor / shrinkInstances * objectToShrink.transform.localScale;
+        for (int i = 0; i < shrinkInstances; i++) 
+        {
+            Vector2 currScale = objectToShrink.transform.localScale;
+            objectToShrink.transform.localScale = currScale - amountToShrinkPerInstance;
+            foreach (Transform child in objectToShrink.transform)
+            {
+                child.localScale = new Vector2(1f, 1f);
+            }
+            yield return new WaitForSeconds(timeToShrink / shrinkInstances);
+        }
+        
     }
 }
