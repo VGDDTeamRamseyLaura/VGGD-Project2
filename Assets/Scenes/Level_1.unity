@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3732,40 +3732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 65915753352977932, guid: 29c511a18299f4b6c93a5527c7c9818a,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65915753352977932, guid: 29c511a18299f4b6c93a5527c7c9818a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 65915753352977934, guid: 29c511a18299f4b6c93a5527c7c9818a,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 65915753444027917, guid: 29c511a18299f4b6c93a5527c7c9818a,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.564954
-      objectReference: {fileID: 0}
-    - target: {fileID: 65915753444027917, guid: 29c511a18299f4b6c93a5527c7c9818a,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.07331669
-      objectReference: {fileID: 0}
-    - target: {fileID: 65915753444027917, guid: 29c511a18299f4b6c93a5527c7c9818a,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.3699159
-      objectReference: {fileID: 0}
-    - target: {fileID: 65915753444027917, guid: 29c511a18299f4b6c93a5527c7c9818a,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.010697931
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29c511a18299f4b6c93a5527c7c9818a, type: 3}
@@ -3836,16 +3806,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3819263824288982558, guid: 77c429af2de3843aab6caf725ec38067,
-        type: 3}
-      propertyPath: timeToShrink
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819263824288982558, guid: 77c429af2de3843aab6caf725ec38067,
-        type: 3}
-      propertyPath: shrinkFactor
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77c429af2de3843aab6caf725ec38067, type: 3}
 --- !u!1001 &6033861776758803686
@@ -3855,11 +3815,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6033861777904647472, guid: dd554f6b49c6f4210b907543b8fc72da,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6033861777904647475, guid: dd554f6b49c6f4210b907543b8fc72da,
         type: 3}
       propertyPath: m_Name

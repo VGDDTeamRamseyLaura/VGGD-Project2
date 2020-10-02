@@ -8,13 +8,17 @@ public class PickupAirJump : MonoBehaviour
     [SerializeField]
     private int numJumps = 1;
     #endregion
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag.Equals("Player"))
         {
-            other.GetComponent<PlayerMovement>().IncreaseNumAirJumps(numJumps);
-            Destroy(gameObject);
+            PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                other.GetComponent<PlayerMovement>().IncreaseNumAirJumps(numJumps);
+                Destroy(gameObject);
+            }
         }
     }
 }

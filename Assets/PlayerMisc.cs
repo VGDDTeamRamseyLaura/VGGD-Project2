@@ -11,6 +11,10 @@ public class PlayerMisc : MonoBehaviour
     private Animator animator;
     #endregion
 
+    #region Private Variables
+    private bool isDead = false;
+    #endregion
+
     private void Start()
     {
         playerMovement = GetComponent<PlayerMovement>();
@@ -19,6 +23,11 @@ public class PlayerMisc : MonoBehaviour
     
     public void Die()
     {
+        if (isDead)
+        {
+            return;
+        }
+        isDead = true;
         playerMovement.IsLocked = true;
         animator.SetTrigger("Death");
         StartCoroutine(ReloadScene());
