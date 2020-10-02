@@ -31,7 +31,11 @@ public class ShrinkLaser : MonoBehaviour
 
     private IEnumerator ShrinkObject(GameObject objectToShrink)
     {
-        objectToShrink.GetComponent<PlayerMovement>().IsLocked = true;
+        PlayerMovement playerMovement = objectToShrink.GetComponent<PlayerMovement>();
+        if (playerMovement != null)
+        {
+            objectToShrink.GetComponent<PlayerMovement>().IsLocked = true;
+        }
         int shrinkInstances = 50;
         Vector2 amountToShrinkPerInstance = shrinkFactor / shrinkInstances * objectToShrink.transform.localScale;
         for (int i = 0; i < shrinkInstances; i++) 
@@ -44,7 +48,10 @@ public class ShrinkLaser : MonoBehaviour
             }
             yield return new WaitForSeconds(timeToShrink / shrinkInstances);
         }
-        objectToShrink.GetComponent<PlayerMovement>().IsLocked = false;
+        if (playerMovement != null)
+        {
+            objectToShrink.GetComponent<PlayerMovement>().IsLocked = false;
+        }
         
     }
 }
