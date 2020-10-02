@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMisc : MonoBehaviour
 {
+    #region Editor Variables
+    [SerializeField]
+    private AudioSource deathSound;
+    #endregion
+
     #region Cached Components
     private PlayerMovement playerMovement;
     
@@ -30,6 +35,7 @@ public class PlayerMisc : MonoBehaviour
         isDead = true;
         playerMovement.IsLocked = true;
         animator.SetTrigger("Death");
+        deathSound.Play();
         StartCoroutine(ReloadScene());
     }
 

@@ -7,6 +7,9 @@ public class PickupAirJump : MonoBehaviour
     #region Editor Variables
     [SerializeField]
     private int numJumps = 1;
+
+    [SerializeField]
+    private AudioSource pickupSound;
     #endregion
 
     #region Cached References
@@ -28,6 +31,7 @@ public class PickupAirJump : MonoBehaviour
             if (playerMovement != null)
             {
                 other.GetComponent<PlayerMovement>().IncreaseNumAirJumps(numJumps);
+                pickupSound.Play();
                 StartCoroutine(DisablePickup(3f));
             }
         }

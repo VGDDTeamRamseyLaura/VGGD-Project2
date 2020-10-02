@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private int startingAirJumps;
+
+    [SerializeField]
+    private AudioSource jumpSound;
     #endregion
 
     #region Cached Components
@@ -115,6 +118,8 @@ public class PlayerMovement : MonoBehaviour
             airJumps--;
         }
         animator.SetTrigger("Jump");
+        jumpSound.Stop();
+        jumpSound.Play();
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(new Vector2(0, jumpForce));
     }
